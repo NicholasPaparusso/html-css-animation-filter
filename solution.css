@@ -1,0 +1,139 @@
+/* Esercizio 1 */
+.ex-1-square{
+  transition: background-color 2s linear;
+}
+.ex-1-square:hover{
+ background-color: red; 
+}
+/* Esercizio 2 */
+.ex-2-square{
+transition: width 1.5s linear;
+}
+
+:active.ex-2-square{
+  width: 100%;
+}
+/* Esercizio 3 */
+.ex-3-square{
+  transition: border-radius .8s linear;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+/* Esercizio 4 */
+.ex-4-square{
+  transition: opacity 1s linear;
+}
+.ex-4-square:hover{
+ opacity: 0;
+}
+/* Esercizio 5 */
+.ex-5-square{
+  transition: all .5s linear;
+}
+.ex-5-square:hover{
+  scale: 1.5;
+}
+:active.ex-5-square{
+  scale: .5;
+}
+/* Esercizio 6 */
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+/* Esercizio 7 */
+.ex-7-img{
+  transition: all .5s linear;
+}
+.ex-7-img:hover{
+  filter: grayscale(100%) sepia(35%);
+}
+/* Esercizio 8 */
+.ex-8-img{
+  transition: all .5s linear;
+}
+.ex-8-img:hover{
+  filter: grayscale(80%) sepia(35%);
+  border-radius: 20px;
+}
+
+/* Esercizio 9 */
+.ex-9-img{
+  transition: all 1s linear;
+}
+.ex-9-img:hover{
+  filter: grayscale(80%) sepia(35%);
+  border-radius: 20px;
+  scale: 1.5;
+}
+/* Esercizio 10 */
+.ex-10-icon{
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(1turn);
+  }
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover{
+  animation: spin 1.5s ease-in 1;
+}
+
+@keyframes spin{
+  75%{
+    transform: rotate(270deg);
+  }
+}
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+  animation: move-right 2s linear 1;
+}
+@keyframes move-right{
+  0% {left: 10%;}
+  50%{left: 70%}
+  100%{left: 10%;}
+}
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: move-left 2s linear 1;
+}
+@keyframes move-left{
+  0%{right: 20%;}
+  50%{right: 70%;}
+  100%{right: 20%;}
+}
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation: move-right-circle 3s linear 1;
+}
+@keyframes move-right-circle{
+  0% {left: 20px;}
+  13%{left: 180px}
+  26%{top: 0px;}
+  39%{top:50px;}
+  52%{left: 180px;}
+  65%{left: -20px;}
+  78%{top: 50px;}
+  91%{top: -10px;}
+  95%{left:-20px}
+  100%{left: 20px;}
+  }
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: move-left-circle 3s linear 1;
+}
+@keyframes move-left-circle{
+  0% {right: 40px;}
+  13%{right: 180px}
+  26%{top: 50px;}
+  39%{top: -10px;}
+  52%{right: 180px;}
+  65%{right: -20px;}
+  78%{top: -10px;}
+  91%{top: 50px;}
+  95%{right:-20px}
+  100%{right: 40px;}
+}
